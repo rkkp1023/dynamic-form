@@ -7,15 +7,19 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
+import { ComponentsModule } from './components/components.module';
+import { AdminLayoutComponent } from './layout/admin-layout/admin-layout.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    AdminLayoutComponent,
   ],
   imports: [
     BrowserModule,
+    ComponentsModule,
     AppRoutingModule,
     ReactiveFormsModule,
     HttpClientModule

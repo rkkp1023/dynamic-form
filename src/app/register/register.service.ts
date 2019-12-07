@@ -11,7 +11,7 @@ export class RegisterService {
     private http: HttpClient
   ) { }
   $registerUser(body): Observable<any> {
-    const url = 'http://localhost:8080/register'
+    const url = 'http://18.223.15.92:3000/register'
     return this.http.post(url, body);
   }
 }
